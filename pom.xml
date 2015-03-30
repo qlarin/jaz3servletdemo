@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>jaz2servletdemo</groupId>
-  <artifactId>jaz2servletdemo</artifactId>
+  <groupId>jaz3servletdemo</groupId>
+  <artifactId>jaz3servletdemo</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>jaz2servletdemo</name>
+  <name>jaz3servletdemo</name>
   <url>http://maven.apache.org</url>
 
    
@@ -53,7 +53,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>jaz2servletdemo</finalName>
+		<finalName>jaz3servletdemo</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
