@@ -13,7 +13,7 @@
 
 <%
 	newadd.add(address);
-
+	response.sendRedirect("addressAdded.jsp");
 %>
 
 </body>

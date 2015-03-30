@@ -11,7 +11,7 @@ public class modelRepoArchive implements IRepoArchive{
 		return new modelUserRepo(database);
 	}
 	
-	public IRepo<UserAddress> getUserAddresses(){
+	public IUserAddressRepo getUserAddresses(){
 		return new modelUserAddressRepo(database);
 	}
 	

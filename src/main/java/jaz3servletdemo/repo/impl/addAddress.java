@@ -19,4 +19,8 @@ public class addAddress {
 		return database.getUserAddresses().getAll();
 	}
 	
+	public UserAddress getAddress(String name){
+		return database.getUserAddresses().withName(name);
+	}
+	
 }

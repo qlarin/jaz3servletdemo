@@ -1,17 +1,21 @@
 package jaz3servletdemo.source;
 
-
 public class UserAddress extends Unit{
 
-	private String username;
-	private String addressType;
-	private String province;
-	private String city;
-	private String postcode;
-	private String street;
-	private String housenr;
+	private String username ="";
+	private String addressType ="";
+	private String province ="";
+	private String city ="";
+	private String postcode ="";
+	private String street ="";
+	private String housenr ="";
+	
+	public UserAddress(){
+		super();
+	}
 	
 	public UserAddress(String username, String addressType, String province, String city, String postcode, String street, String housenr){
+		super();
 		setUsername(username);
 		setAddressType(addressType);
 		setProvince(province);
@@ -64,5 +68,6 @@ public class UserAddress extends Unit{
 	public void setHousenr(String housenr) {
 		this.housenr = housenr;
 	}
+	
 	
 }

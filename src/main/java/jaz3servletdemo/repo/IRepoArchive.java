@@ -5,7 +5,7 @@ import jaz3servletdemo.source.*;
 public interface IRepoArchive {
 
 	public IUserRepo getUsers();
-	public IRepo<UserAddress> getUserAddresses();
+	public IUserAddressRepo getUserAddresses();
 	public IRepo<Task> getTasks();
 	
 }

@@ -11,7 +11,7 @@
     <description></description>
     <display-name>RegisterServlet</display-name>
     <servlet-name>RegisterServlet</servlet-name>
-    <servlet-class>jaz2servletdemo.web.RegisterServlet</servlet-class>
+    <servlet-class>jaz3servletdemo.web.RegisterServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>RegisterServlet</servlet-name>
@@ -21,7 +21,7 @@
     <description></description>
     <display-name>LoginServlet</display-name>
     <servlet-name>LoginServlet</servlet-name>
-    <servlet-class>jaz2servletdemo.web.LoginServlet</servlet-class>
+    <servlet-class>jaz3servletdemo.web.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
@@ -30,7 +30,7 @@
   <filter>
     <display-name>LoginFilter</display-name>
     <filter-name>LoginFilter</filter-name>
-    <filter-class>jaz2servletdemo.web.LoginFilter</filter-class>
+    <filter-class>jaz3servletdemo.web.LoginFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>LoginFilter</filter-name>
@@ -40,7 +40,7 @@
     <description></description>
     <display-name>TestServlet</display-name>
     <servlet-name>TestServlet</servlet-name>
-    <servlet-class>jaz2servletdemo.web.TestServlet</servlet-class>
+    <servlet-class>jaz3servletdemo.web.TestServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>TestServlet</servlet-name>
@@ -50,7 +50,7 @@
     <description></description>
     <display-name>PromoteServlet</display-name>
     <servlet-name>PromoteServlet</servlet-name>
-    <servlet-class>jaz2servletdemo.web.PromoteServlet</servlet-class>
+    <servlet-class>jaz3servletdemo.web.PromoteServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>PromoteServlet</servlet-name>
@@ -59,7 +59,7 @@
   <filter>
     <display-name>PromoteFilter</display-name>
     <filter-name>PromoteFilter</filter-name>
-    <filter-class>jaz2servletdemo.web.PromoteFilter</filter-class>
+    <filter-class>jaz3servletdemo.web.PromoteFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>PromoteFilter</filter-name>
@@ -68,7 +68,7 @@
   <filter>
     <display-name>RegisterFilter</display-name>
     <filter-name>RegisterFilter</filter-name>
-    <filter-class>jaz2servletdemo.web.RegisterFilter</filter-class>
+    <filter-class>jaz3servletdemo.web.RegisterFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>RegisterFilter</filter-name>
@@ -77,7 +77,7 @@
   <filter>
     <display-name>PasswordFilter</display-name>
     <filter-name>PasswordFilter</filter-name>
-    <filter-class>jaz2servletdemo.web.PasswordFilter</filter-class>
+    <filter-class>jaz3servletdemo.web.PasswordFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>PasswordFilter</filter-name>
@@ -87,7 +87,7 @@
     <description></description>
     <display-name>MakeAdmin</display-name>
     <servlet-name>MakeAdmin</servlet-name>
-    <servlet-class>jaz2servletdemo.web.MakeAdmin</servlet-class>
+    <servlet-class>jaz3servletdemo.web.MakeAdmin</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>MakeAdmin</servlet-name>
@@ -97,7 +97,7 @@
     <description></description>
     <display-name>PremiumAccessServlet</display-name>
     <servlet-name>PremiumAccessServlet</servlet-name>
-    <servlet-class>jaz2servletdemo.web.PremiumAccessServlet</servlet-class>
+    <servlet-class>jaz3servletdemo.web.PremiumAccessServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>PremiumAccessServlet</servlet-name>
@@ -106,7 +106,7 @@
   <filter>
     <display-name>PremiumAccessFilter</display-name>
     <filter-name>PremiumAccessFilter</filter-name>
-    <filter-class>jaz2servletdemo.web.PremiumAccessFilter</filter-class>
+    <filter-class>jaz3servletdemo.web.PremiumAccessFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>PremiumAccessFilter</filter-name>
@@ -115,7 +115,7 @@
   <filter>
     <display-name>ProfileFilter</display-name>
     <filter-name>ProfileFilter</filter-name>
-    <filter-class>jaz2servletdemo.web.ProfileFilter</filter-class>
+    <filter-class>jaz3servletdemo.web.ProfileFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>ProfileFilter</filter-name>
@@ -124,7 +124,7 @@
   <filter>
     <display-name>PremiumFormFilter</display-name>
     <filter-name>PremiumFormFilter</filter-name>
-    <filter-class>jaz2servletdemo.web.PremiumFormFilter</filter-class>
+    <filter-class>jaz3servletdemo.web.PremiumFormFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>PremiumFormFilter</filter-name>
@@ -133,7 +133,7 @@
   <filter>
     <display-name>UserAccessFilter</display-name>
     <filter-name>UserAccessFilter</filter-name>
-    <filter-class>jaz2servletdemo.web.UserAccessFilter</filter-class>
+    <filter-class>jaz3servletdemo.web.UserAccessFilter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>UserAccessFilter</filter-name>

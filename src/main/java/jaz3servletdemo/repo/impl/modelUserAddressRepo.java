@@ -1,11 +1,12 @@
 package jaz3servletdemo.repo.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import jaz3servletdemo.source.*;
 import jaz3servletdemo.repo.*;
 
-public class modelUserAddressRepo implements IRepo<UserAddress> {
+public class modelUserAddressRepo implements IUserAddressRepo {
 
 	private modelDatabase database;
 	
@@ -41,6 +42,14 @@ public class modelUserAddressRepo implements IRepo<UserAddress> {
 	public UserAddress getUnit(String name){
 		for(UserAddress ua: database.addresses){
 			if(ua.getUsername()==name)
+				return ua;
+		}
+		return null;
+	}
+
+	public UserAddress withName(String name) {
+		for(UserAddress ua: database.addresses){
+			if(ua.getUsername().equals(name))
 				return ua;
 		}
 		return null;
