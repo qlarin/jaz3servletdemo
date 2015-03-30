@@ -10,9 +10,11 @@
 	 <h2>Menu</h2>
 	 
 	 	<p><a href="userProfile.jsp">Profil użytkownika</a></p>
+	 	<p><a href="userAddresses.jsp">Lista adresów użytkownika</a></p>
 	 	<p><a href="premium.jsp">Strona dla Premium</a></p>
 	 	<p><a href="showAll.jsp">Pokaż listę użytkowników</a><p>
 	 	<br>
+	 	<p><a href="newAddressForm.jsp">Dodaj nowy adres</a><p>
         <p><a href="regForm.jsp">Formularz rejestracyjny</a><p>
         <p><a href="logForm.jsp">Formularz logowania</a><p>
         <p><a href="premForm.jsp">Formularz nadawania/usuwania uprawnień Premium</a><p>

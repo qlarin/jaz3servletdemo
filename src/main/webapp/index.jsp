@@ -5,10 +5,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Zadanie 2</title>
+        <title>Zadanie 3</title>
     </head>
     <body>
-        <h1>Zadanie 2(Servlety, JSP)</h1>
+        <h1>Zadanie 3(Ciąg dalszy zadania 2)</h1>
         
         <p><a href="regForm.jsp">Formularz rejestracyjny</a><p>
         <p><a href="logForm.jsp">Formularz logowania</a><p>
