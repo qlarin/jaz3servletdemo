@@ -22,7 +22,7 @@ public class modelUserRepo implements IUserRepo {
 		database.users.remove(unit);
 	}
 	
-	public void update(User unit){
+	public void update(User unit, int id){
 		
 	}
 	

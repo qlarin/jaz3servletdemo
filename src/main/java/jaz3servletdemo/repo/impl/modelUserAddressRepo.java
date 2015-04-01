@@ -1,6 +1,6 @@
 package jaz3servletdemo.repo.impl;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 import jaz3servletdemo.source.*;
@@ -23,8 +23,8 @@ public class modelUserAddressRepo implements IUserAddressRepo {
 		database.addresses.remove(unit);
 	}
 	
-	public void update(UserAddress unit){
-		
+	public void update(UserAddress unit, int id){
+		database.addresses.add(id, unit);
 	}
 	
 	public List<UserAddress> getAll(){

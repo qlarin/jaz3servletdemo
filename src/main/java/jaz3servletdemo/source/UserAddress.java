@@ -9,6 +9,7 @@ public class UserAddress extends Unit{
 	private String postcode ="";
 	private String street ="";
 	private String housenr ="";
+	private int nr;
 	
 	public UserAddress(){
 		super();
@@ -23,6 +24,7 @@ public class UserAddress extends Unit{
 		setPostcode(postcode);
 		setStreet(street);
 		setHousenr(housenr);
+		
 	}
 	
 	
@@ -68,6 +70,13 @@ public class UserAddress extends Unit{
 	public void setHousenr(String housenr) {
 		this.housenr = housenr;
 	}
-	
+
+	public int getNr() {
+		return nr;
+	}
+
+	public void setNr(int nr) {
+		this.nr = nr;
+	}
 	
 }

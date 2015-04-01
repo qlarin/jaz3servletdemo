@@ -7,6 +7,7 @@
 <title>Site for registered ppl</title>
 </head>
 <body>
+<% session.setAttribute("update", "no"); %>
 	 <h2>Menu</h2>
 	 
 	 	<p><a href="userProfile.jsp">Profil użytkownika</a></p>

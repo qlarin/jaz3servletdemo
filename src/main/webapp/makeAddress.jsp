@@ -10,7 +10,7 @@
 
 <jsp:useBean id="address" class="jaz3servletdemo.source.UserAddress" scope="session" />
 
-<h3>Dodaj nowy adres</h3>
+<h3>Uzupełnij dane adresowe:</h3>
 
 <form action="prepareAddress.jsp" method="get">
 	Typ adresu: <select name="addresstype">
@@ -40,7 +40,7 @@
 	Kod pocztowy: <input type="text" name="postcode" value="${address.postcode}"><br>
 	Ulica: <input type="text" name="street" value="${address.street}"><br>
 	Numer domu/mieszkania: <input type="text" name="housenr" value="${address.housenr}"><br><br>
-	<input type="submit" value="Dodaj adres"><br>
+	<input type="submit" value="Wykonaj"><br>
 </form>
 
 </body>

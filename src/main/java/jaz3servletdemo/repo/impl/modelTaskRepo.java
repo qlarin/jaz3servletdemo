@@ -22,7 +22,7 @@ public class modelTaskRepo implements IRepo<Task>{
 		database.tasks.remove(unit);
 	}
 	
-	public void update(Task unit){
+	public void update(Task unit, int id){
 		
 	}
 	

@@ -9,18 +9,53 @@ import jaz3servletdemo.source.UserAddress;
 public class addAddress {
 
 	private IRepoArchive database = new modelRepoArchive();
-
-	public void add(UserAddress address){
+	private int count = 0;
+	
+	public synchronized void add(UserAddress address){
 		UserAddress newAddress = new UserAddress(address.getUsername(), address.getAddressType(), address.getProvince(), address.getCity(), address.getPostcode(), address.getStreet(), address.getHousenr());
-		database.getUserAddresses().save(newAddress);
+		newAddress.setNr(count);
+		incCount();
+		saveAddress(newAddress);
 	}
 	
-	public List<UserAddress> getAllAddresses(){
+	public synchronized void editAddress(UserAddress address, int id){
+		for(UserAddress ua : getAllAddresses()){
+			if(ua.getNr()==id){
+				int index = getAllAddresses().indexOf(ua);
+				removeAddress(ua);
+				UserAddress newAddress = new UserAddress(address.getUsername(), address.getAddressType(), address.getProvince(), address.getCity(), address.getPostcode(), address.getStreet(), address.getHousenr());
+				newAddress.setNr(id);
+				updateAddress(newAddress, index);
+			}
+		}
+	}
+	
+	public synchronized void saveAddress(UserAddress address){
+		database.getUserAddresses().save(address);
+	}
+	
+	public synchronized void updateAddress(UserAddress address, int index){
+		database.getUserAddresses().update(address, index);
+	}
+	
+	public synchronized void removeAddress(UserAddress address){
+		database.getUserAddresses().delete(address);
+	}
+	
+	public synchronized List<UserAddress> getAllAddresses() {
 		return database.getUserAddresses().getAll();
 	}
 	
-	public UserAddress getAddress(String name){
+	public synchronized UserAddress getAddress(String name){
 		return database.getUserAddresses().withName(name);
+	}
+
+	public synchronized int getCount() {
+		return count;
+	}
+
+	public synchronized void incCount(){
+		this.count++;
 	}
 	
 }

@@ -17,7 +17,7 @@
 		address.setAddressType(request.getParameter("addresstype"));
 		address.setProvince(request.getParameter("province"));
 	
- 		RequestDispatcher dispatcher = request.getRequestDispatcher("addNewAddress.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("addNewAddress.jsp");
 		dispatcher.forward(request, response);
 %>
 

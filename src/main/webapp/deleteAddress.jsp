@@ -1,3 +1,4 @@
+<%@page import="jaz3servletdemo.source.UserAddress"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -7,26 +8,20 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-<jsp:useBean id="address" class="jaz3servletdemo.source.UserAddress" scope="session" />
 <jsp:useBean id="newadd" class="jaz3servletdemo.repo.impl.addAddress" scope="application" />
-
-<%
-	String action = (String) session.getAttribute("update");
-	if(action.equals("yes")){
-		int id = (Integer) session.getAttribute("id");
+<%  
+		int id = Integer.parseInt(request.getParameter("nr"));
 		try{
-			newadd.editAddress(address, id);
+			for(UserAddress ua : newadd.getAllAddresses()){
+				if(ua.getNr()==id){
+					newadd.removeAddress(ua);
+				}
+			}
 		}catch(Exception e){
 			e.printStackTrace();
 		}finally{
-			response.sendRedirect("addressEdited.jsp");
+			response.sendRedirect("deleteComplete.jsp");
 		}
-	}else{
-		newadd.add(address);
-		response.sendRedirect("addressAdded.jsp");
-	}
 %>
-
 </body>
 </html>
